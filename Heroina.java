@@ -1,3 +1,6 @@
+import lombok.Getter;
+
+@Getter 
 public class Heroina {
     private String Nome;
     private int Mascaras = 5;
@@ -8,15 +11,7 @@ public class Heroina {
         this.Mascaras = 5;
         this.Seda = 0;
     }
-    public String GetNome() {
-        return Nome;
-    }
-    public int GetMascaras() {
-        return Mascaras;
-    }
-    public int GetSeda() {
-        return Seda;
-    }
+    
     public void atacar() {
         System.out.println(Nome + " ataca com a agulha!");
         Seda = Math.min(Seda + 1, 9);
