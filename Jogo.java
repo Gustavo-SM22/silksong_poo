@@ -11,6 +11,8 @@ public class Jogo {
         String nome = JOptionPane.showInputDialog("Digite o nome do jogador:");
 
         System.out.println("Carregando save de " + nome + "...");
+        Heroina heroina = new Heroina("Hornet");
+        System.out.println(heroina);
     }
 
 }
